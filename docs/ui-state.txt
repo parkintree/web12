@@ -1,0 +1,6 @@
+页面列表：["测试任务"]
+window.__todoState：[{"id":1,"text":"测试任务","completed":false}]
+localStorage.todos：[{"id":1,"text":"测试任务","completed":false}]
+localStorage.theme：light
+document.documentElement.dataset.theme：light
+页面异常：0 个

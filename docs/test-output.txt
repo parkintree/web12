@@ -1,0 +1,17 @@
+
+> web12-todo-theme@1.0.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/大三/Web/web12
+
+ ✓ tests/todo-core.handwritten.test.ts (19 tests) 7ms
+ ✓ tests/todo-core.ai-patched.test.ts (22 tests) 8ms
+ ✓ tests/persistence.test.ts (6 tests) 5ms
+ ✓ tests/theme-storage.test.ts (8 tests) 4ms
+
+ Test Files  4 passed (4)
+      Tests  55 passed (55)
+   Start at  16:34:05
+   Duration  206ms (import 39%, transform 35%, tests 14%, worker 12%)
+

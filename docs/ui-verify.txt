@@ -1,0 +1,85 @@
+W12 真浏览器验证（Edge headless + Vite preview）
+时间：2026/11/17 16:35:29
+结果：27/27 通过
+
+01. [PASS] 初始主题为 light
+    期望: "light"
+    实际: "light"
+02. [PASS] 初始 localStorage.theme 为 light
+    期望: "light"
+    实际: "light"
+03. [PASS] 初始列表为空
+    期望: 0
+    实际: 0
+04. [PASS] ThemeBadge 显示当前主题
+    期望: 包含「当前主题：浅色」
+    实际: 当前主题：浅色
+05. [PASS] ThemeToggle 存在且 aria-pressed=false
+    期望: "false"
+    实际: "false"
+06. [PASS] 新增后 localStorage.todos 与 state 一致
+    期望: ["任务B","任务A"]
+    实际: ["任务B","任务A"]
+07. [PASS] State 顺序为新项在前
+    期望: ["任务B","任务A"]
+    实际: ["任务B","任务A"]
+08. [PASS] 点击切换后 data-theme=dark
+    期望: "dark"
+    实际: "dark"
+09. [PASS] 点击切换后 localStorage.theme=dark
+    期望: "dark"
+    实际: "dark"
+10. [PASS] ThemeToggle aria-pressed 同步为 true
+    期望: "true"
+    实际: "true"
+11. [PASS] ThemeBadge 同步为深色
+    期望: 包含「当前主题：深色」
+    实际: 当前主题：深色
+12. [PASS] 深色主题的页面底色确实变化
+    期望: rgb(238, 241, 244) → 更暗的 rgb(10, 17, 23)
+    实际: rgb(10, 17, 23)
+13. [PASS] 刷新后主题仍为 dark
+    期望: "dark"
+    实际: "dark"
+14. [PASS] 刷新后待办仍为两项
+    期望: ["任务B","任务A"]
+    实际: ["任务B","任务A"]
+15. [PASS] 切回后 data-theme=light
+    期望: "light"
+    实际: "light"
+16. [PASS] 刷新后浅色主题保留
+    期望: "light"
+    实际: "light"
+17. [PASS] 纯刷新后待办仍在（持久化）
+    期望: ["任务B","任务A"]
+    实际: ["任务B","任务A"]
+18. [PASS] 非法 JSON 不导致页面崩溃
+    期望: 0
+    实际: 0
+19. [PASS] 非法 JSON 恢复为空列表
+    期望: 0
+    实际: 0
+20. [PASS] 非法 JSON 的存储被安全归一为 []
+    期望: "[]"
+    实际: "[]"
+21. [PASS] 非数组 JSON 恢复为空列表
+    期望: 0
+    实际: 0
+22. [PASS] 非数组 JSON 的存储被安全归一为 []
+    期望: "[]"
+    实际: "[]"
+23. [PASS] 非法主题值回落到 light
+    期望: "light"
+    实际: "light"
+24. [PASS] 非法主题值被单 Effect 规范为 light
+    期望: "light"
+    实际: "light"
+25. [PASS] 首次加载读到「测试任务」
+    期望: ["测试任务"]
+    实际: ["测试任务"]
+26. [PASS] 首次加载后存储仍是原数据，未被 [] 覆盖
+    期望: "[{\"id\":1,\"text\":\"测试任务\",\"completed\":false}]"
+    实际: "[{\"id\":1,\"text\":\"测试任务\",\"completed\":false}]"
+27. [PASS] 再次刷新「测试任务」仍在
+    期望: ["测试任务"]
+    实际: ["测试任务"]

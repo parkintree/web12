@@ -1,0 +1,16 @@
+任务 3 动手验证：localStorage 中预置 key=todos 的「测试任务」
+时间：2026/11/17 16:35:29
+步骤：DevTools → Application → Local Storage 写入
+  key: todos
+  value: [{"id":1,"text":"测试任务","completed":false}]
+然后打开页面、检查 localStorage、再刷新一次。
+
+01. [PASS] 首次加载读到「测试任务」
+    期望: ["测试任务"]
+    实际: ["测试任务"]
+02. [PASS] 首次加载后存储仍是原数据，未被 [] 覆盖
+    期望: "[{\"id\":1,\"text\":\"测试任务\",\"completed\":false}]"
+    实际: "[{\"id\":1,\"text\":\"测试任务\",\"completed\":false}]"
+03. [PASS] 再次刷新「测试任务」仍在
+    期望: ["测试任务"]
+    实际: ["测试任务"]
